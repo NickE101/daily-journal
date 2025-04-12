@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Daily Journal</title>
+    <head>
+        <title>Daily Journal</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>      
 </head>
 <body>
   <h1>My Daily Journal</h1>
+  <div class="toggle-container">
+    <label>
+      Dark Mode
+      <input type="checkbox" id="themeToggle">
+    </label>
+  </div>  
   <textarea id="entry" rows="10" cols="50" placeholder="Write your thoughts here..."></textarea><br/>
   <button onclick="saveEntry()">Save</button>
 
@@ -15,4 +24,3 @@
 </body>
 </html>
 
-<button onclick="clearEntries()">Clear All</button>
